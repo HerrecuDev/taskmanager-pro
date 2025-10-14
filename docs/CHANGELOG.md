@@ -21,3 +21,8 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 ### Añadido
 - Versión inicial
 - Gestión básica de tareas
+
+## [1.1.1] - 2025-10-14
+
+### Corregido
+- Hotfix crítico: eliminado spam de notificaciones duplicadas
