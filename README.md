@@ -1,4 +1,4 @@
-#TaskManager Pro v1.0.0
+#TaskManager Pro v1.1.0
 Aplicación de gestión de tareas
 
 ## Instalación
