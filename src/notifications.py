@@ -7,9 +7,15 @@ class NotificationManager:
     def __init__(self):
         self.notifications = []
         self.enabled = True
+        self._sent_notifications = set()  # FIX: Evitar duplicados
     
     def add_notification(self, task_id, message, due_date):
         """Añade una nueva notificación"""
+        # FIX: Verificar que no se envíe duplicada
+        notification_key = f"{task_id}_{message}"
+        if notification_key in self._sent_notifications:
+            return None
+        
         notification = {
             'task_id': task_id,
             'message': message,
@@ -17,6 +23,7 @@ class NotificationManager:
             'created_at': datetime.now()
         }
         self.notifications.append(notification)
+        self._sent_notifications.add(notification_key)
         return notification
     
     def get_urgent_notifications(self):
@@ -32,3 +39,5 @@ class NotificationManager:
         """Elimina notificaciones de tareas ya vencidas"""
         now = datetime.now()
         self.notifications = [n for n in self.notifications if n['due_date'] > now]
+        # FIX: También limpiar el registro de notificaciones enviadas
+        self._sent_notifications.clear()
