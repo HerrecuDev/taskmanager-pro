@@ -26,3 +26,8 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 
 ### Corregido
 - Hotfix crítico: eliminado spam de notificaciones duplicadas
+
+## [1.1.1] - 2025-10-16
+
+### Corregido
+- Hotfix crítico: eliminado spam de notificaciones duplicadas

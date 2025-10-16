@@ -6,4 +6,4 @@ VERSION_INFO = {
     'minor': 1,
     'patch': 1
 }
-RELEASE_DATE = '2025-10-14'
+RELEASE_DATE = '2025-10-16'

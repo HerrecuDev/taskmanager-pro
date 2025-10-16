@@ -1,6 +1,6 @@
 # Hotfixes
 
-## [1.1.1] - 2025-10-14
+## [1.1.1] - 2025-10-16
 
 ### Corregido
 - **CRÍTICO**: Solucionado spam de notificaciones duplicadas
